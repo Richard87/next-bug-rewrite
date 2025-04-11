@@ -10,10 +10,12 @@ export default function Page(props: Props) {
 
 async function Home(props: Props) {
   const { domain, path } = await props.params;
-  const {data} = await getData(domain, path);
+  const data = await getData(domain, path);
   return (
     <div>
-      <h1>{data}</h1>
+      <h1>Msg: {data.hello}</h1>
+      <h2>Domain: {data.domain}</h2>
+      <h3>Path: {data.path}</h3>
       <Link href={"/some-page"}>Some page</Link>
     </div>
   );
