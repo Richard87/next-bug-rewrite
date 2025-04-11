@@ -17,7 +17,8 @@ async function Home(props: Props) {
       <h2>Domain: {data.domain}</h2>
       <h3>Path: {data.path}</h3>
       <Link href={"/some-page"}>Some page</Link>
-      <Link href={"/test/some-page"}>Some Sub page</Link>
+      <br/><br/>
+      <Link href={"/test/some-page"}>Some Sub page works fine</Link>
     </div>
   );
 }
