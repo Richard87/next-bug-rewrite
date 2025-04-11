@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
 		// dynamicIO: true,
 		// ppr: true,
 	},
-	// output: "standalone",
+	output: "standalone",
 	typescript: {
 		// !! WARN !!
 		// Dangerously allow production builds to successfully complete even if
