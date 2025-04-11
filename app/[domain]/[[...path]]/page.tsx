@@ -1,13 +1,10 @@
 import { getData } from "@/app/server";
-import { Suspense } from "react";
 
 type Props = { params: Promise<{ domain: string; path?: string[] }> }
 
 /** Add your relevant code here for the issue to reproduce */
-export default async function Page(props: Props) {
-  return <Suspense fallback={<div>Loading...</div>}>
-      <Home {...props} />
-    </Suspense>;
+export default function Page(props: Props) {
+  return <Home {...props} />;
 }
 
 async function Home(props: Props) {
