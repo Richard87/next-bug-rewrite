@@ -1,4 +1,5 @@
 import { getData } from "@/app/server";
+import Link from "next/link";
 
 type Props = { params: Promise<{ domain: string; path?: string[] }> }
 
@@ -13,6 +14,7 @@ async function Home(props: Props) {
   return (
     <div>
       <h1>{data}</h1>
+      <Link href={"/some-page"}>Some page</Link>
     </div>
   );
 }
